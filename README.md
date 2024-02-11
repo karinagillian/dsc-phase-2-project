@@ -1,66 +1,44 @@
-# Phase 2 Project
+# Phase 2 Project 2 Homeowner Reccomendations
+Author: Karina
 
-Another module down--you're almost half way there!
 
-![awesome](https://raw.githubusercontent.com/learn-co-curriculum/dsc-phase-2-project-campus/master/halfway-there.gif)
+## Overview
 
-All that remains in Phase 2 is to put our newfound data science skills to use with a large project! This project should take 20 to 30 hours to complete.
+In this project, our aim is to provide actionable insights to real estate agents, empowering them to offer informed recommendations to homeowners regarding the potential value enhancement of their properties through strategic renovations. Central to our analysis are key factors such as the number of bedrooms and floors, each of which holds significant sway over the pricing dynamics of residential properties.
 
-## Project Overview
+By doing a predictive model and using linear regression the aim is to provide the Agents of King County House Sales with clear reccomendations they can pass on to their clients & home owners around what renovations they can do to improve the sale value of their homes. 
 
-For this project, you will use regression modeling to analyze house sales in a northwestern county.
+Key learnings 
+There is a lot of prework invloved in getting data ready to make an affective regression model
+Us
 
-### The Data
+## Data
 
-This project uses the King County House Sales dataset, which can be found in  `kc_house_data.csv` in the data folder in this repo. The description of the column names can be found in `column_names.md` in the same folder. As with most real world data sets, the column names are not perfectly described, so you'll have to do some research or use your best judgment if you have questions about what the data means.
+This project uses the King County House Sales datase, so only one dataset for this project. 
+The data initially needing cleaning by removing null values, reordering where needed, removing columns that were not relavent. This made the data easier to work from and also easier to share the findings in a succinct and clear manner. It was then a matter of separating out the columns with a large number of distinct values before changing categorical variables to dummies, checking for multicollinarity and log transformation.
 
-It is up to you to decide what data from this dataset to use and how to use it. If you are feeling overwhelmed or behind, we recommend you ignore some or all of the following features:
+***
 
-* date
-* view
-* sqft_above
-* sqft_basement
-* yr_renovated
-* zipcode
-* lat
-* long
-* sqft_living15
-* sqft_lot15
+## Methods
 
-### Business Problem
 
-It is up to you to define a stakeholder and business problem appropriate to this dataset.
+***
 
-If you are struggling to define a stakeholder, we recommend you complete a project for a real estate agency that helps homeowners buy and/or sell homes. A business problem you could focus on for this stakeholder is the need to provide advice to homeowners about how home renovations might increase the estimated value of their homes, and by what amount.
+## Results & Conclusions
 
-## Deliverables
 
-There are three deliverables for this project:
 
-* A **GitHub repository**
-* A **Jupyter Notebook**
-* A **non-technical presentation**
 
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic for instructions on creating and submitting your deliverables. Refer to the rubric associated with this assignment for specifications describing high-quality deliverables.
+***
 
-### Key Points
+## Repository Structure
 
-* **Your deliverables should explicitly address each step of the data science process.** Refer to [the Data Science Process lesson](https://github.com/learn-co-curriculum/dsc-data-science-processes) from Topic 19 for more information about process models you can use.
+Describe the structure of your repository and its contents, for example:
 
-* **Your Jupyter Notebook should demonstrate an iterative approach to modeling.** This means that you begin with a basic model, evaluate it, and then provide justification for and proceed to a new model. After you finish refining your models, you should provide 1-3 paragraphs discussing your final model - this should include interpreting at least 3 important parameter estimates or statistics.
-
-* **Based on the results of your models, your notebook and presentation should discuss at least two features that have strong relationships with housing prices.**
-
-## Getting Started
-
-Start on this project by forking and cloning [this project repository](https://github.com/learn-co-curriculum/dsc-phase-2-project) to get a local copy of the dataset.
-
-We recommend structuring your project repository similar to the structure in [the Phase 1 Project Template](https://github.com/learn-co-curriculum/dsc-project-template). You can do this either by creating a new fork of that repository to work in or by building a new repository from scratch that mimics that structure.
-
-## Project Submission and Review
-
-Review the "Project Submission & Review" page in the "Milestones Instructions" topic to learn how to submit your project and how it will be reviewed. Your project must pass review for you to progress to the next Phase.
-
-## Summary
-
-This project will give you a valuable opportunity to develop your data science skills using real-world data. The end-of-phase projects are a critical part of the program because they give you a chance to bring together all the skills you've learned, apply them to realistic projects for a business stakeholder, practice communication skills, and get feedback to help you improve. You've got this!
+```
+├── README.md                           <- The top-level README for reviewers of this project
+├── DSC-phase1-project-microsoft.py   <- Narrative documentation of analysis in Jupyter notebook
+├── DS_Project_Presentation.pdf         <- PDF version of project presentation
+├── data                                <- Both sourced externally and generated from code
+└── images                              <- Both sourced externally and generated from code
+```
